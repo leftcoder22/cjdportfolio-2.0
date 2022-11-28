@@ -7,7 +7,7 @@ import { PageInfo } from "../../typings";
 
 
 const query = groq`
-    *[_type =="pageInfo"][0]
+    *[_type =="pageInfo"]
 `;
 
 type Data = {
@@ -22,5 +22,4 @@ export default async function handler(
 
     res.status(200).json({ pageInfo });
   }
-  
   

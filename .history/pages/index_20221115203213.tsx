@@ -19,7 +19,7 @@ import { fetchSocials } from '../utils/fetchSocials'
 import ContactMe from '../components/ContactMe'
 
 type Props = {
- pageInfo: PageInfo[];
+ pageInfo: PageInfo;
  experience: Experience[];
  skills: Skill[];
  projects: Project[];
@@ -79,7 +79,7 @@ export default Home;
 
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
-  const pageInfo: PageInfo[] = await fetchPageInfo();
+  const pageInfo: PageInfo = await fetchPageInfo();
   const experience: Experience[] = await fetchExperience();
   const skills: Skill[] = await fetchSkills();
   const projects: Project[] = await fetchProjects();

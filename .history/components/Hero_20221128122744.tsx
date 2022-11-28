@@ -26,12 +26,12 @@ export default function Hero({ pageInfo }: Props) {
          <BackgroundCircles />
          <img 
          className='relative rounded-full h-33 w-32 mx-auto object-cover'
-         src='https://media-exp1.licdn.com/dms/image/C4D03AQEaIm3Uh8vtsQ/profile-displayphoto-shrink_100_100/0/1638992085132?e=1675296000&v=beta&t=79OZvFbdGA6UjZ79J2EDFtWu3OrIAa4QqF2iKVzRnGk'
+         src=''
          alt='' 
          /> 
 
        <div className='z-20'>
-        <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[15px]'></h2>
+        <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[15px]'>{}</h2>
         <h1 className='text-5xl lg:text-6xl font-semibold px-10'>
           <span className='mr-3'>{text}</span>
           <Cursor cursorColor='green' />
